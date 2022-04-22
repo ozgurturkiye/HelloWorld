@@ -41,3 +41,9 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 <li><a href="https://twitter.com/{{ site.twitter_username }}">twitter</a></li>
 <li><a href="">{{ site.github_username }}</a></li>
 </ul>
+
+<ul>
+{% for post in site.posts %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
